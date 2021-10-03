@@ -1,8 +1,10 @@
-package ru.vsu.fedosova;
+package ru.vsu.fedosova.objects;
+
+import ru.vsu.fedosova.DrawingObject;
 
 import java.awt.*;
 
-import static ru.vsu.fedosova.DrawUtil.*;
+import static ru.vsu.fedosova.util.DrawUtil.*;
 
 public class Sky extends DrawingObject {
     public Sky(double cofX, double cofY, double cofW, double cofH) {

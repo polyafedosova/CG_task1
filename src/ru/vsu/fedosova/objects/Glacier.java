@@ -1,9 +1,11 @@
-package ru.vsu.fedosova;
+package ru.vsu.fedosova.objects;
+
+import ru.vsu.fedosova.DrawingObject;
 
 import java.awt.*;
 
-import static ru.vsu.fedosova.ArrayUtil.*;
-import static ru.vsu.fedosova.DrawUtil.*;
+import static ru.vsu.fedosova.util.ArrayUtil.*;
+import static ru.vsu.fedosova.util.DrawUtil.*;
 
 public class Glacier extends DrawingObject {
     private final double[] x = new double[13];
@@ -23,7 +25,6 @@ public class Glacier extends DrawingObject {
         });
     }
 
-
     private void fillArrX(){
         this.x[0] = cofX;
         for (int i = 1; i < 12; i++) {
@@ -31,6 +32,7 @@ public class Glacier extends DrawingObject {
         }
         this.x[12] = cofX + cofW;
     }
+
     private void fillArrY(double[] dif){
         this.y[0] = cofY;
         for (int i = 1; i < 12; i++) {

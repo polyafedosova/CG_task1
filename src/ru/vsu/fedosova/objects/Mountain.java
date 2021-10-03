@@ -1,8 +1,10 @@
-package ru.vsu.fedosova;
+package ru.vsu.fedosova.objects;
+
+import ru.vsu.fedosova.DrawingObject;
 
 import java.awt.*;
-import static ru.vsu.fedosova.DrawUtil.*;
-import static ru.vsu.fedosova.ArrayUtil.*;
+import static ru.vsu.fedosova.util.DrawUtil.*;
+import static ru.vsu.fedosova.util.ArrayUtil.*;
 
 public class Mountain extends DrawingObject {
     private final double[] x;

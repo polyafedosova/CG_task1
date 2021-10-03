@@ -1,11 +1,13 @@
-package ru.vsu.fedosova;
+package ru.vsu.fedosova.objects;
+
+import ru.vsu.fedosova.DrawingObject;
 
 import java.awt.*;
 
-import static ru.vsu.fedosova.ArrayUtil.multiplyArrayBy;
-import static ru.vsu.fedosova.ArrayUtil.toIntArray;
-import static ru.vsu.fedosova.DrawUtil.drawWithColor;
-import static ru.vsu.fedosova.RandomUtil.*;
+import static ru.vsu.fedosova.util.ArrayUtil.multiplyArrayBy;
+import static ru.vsu.fedosova.util.ArrayUtil.toIntArray;
+import static ru.vsu.fedosova.util.DrawUtil.drawWithColor;
+import static ru.vsu.fedosova.util.RandomUtil.*;
 
 public class Cloud extends DrawingObject {
     private final double[] x;
@@ -16,8 +18,8 @@ public class Cloud extends DrawingObject {
         this.x = new double[]{
                 cofX,
                 cofX + cofW,
-                randDouble(cofX + cofW / 2, cofX + cofW),
-                randDouble(cofX + cofW / 8, cofX + cofW / 2)
+                randDouble(cofX + cofW * 0.6, cofX + cofW * 0.9),
+                randDouble(cofX + cofW * 0.3, cofX + cofW * 0.6)
         };
         this.y = new double[]{
                 cofY,

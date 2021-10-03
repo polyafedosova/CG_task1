@@ -25,11 +25,11 @@ public abstract class DrawingObject {
         color = null;
     }
 
-    public DrawingObject(double cofX, double cofY, double cofH) {
+    public DrawingObject(double cofX, double cofY, double cofH, Color color) {
         this.cofX = cofX;
         this.cofY = cofY;
         this.cofH = cofH;
-        color = null;
+        this.color = color;
         cofW = 0;
     }
 
